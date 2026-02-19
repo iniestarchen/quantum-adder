@@ -1,0 +1,32 @@
+{
+  "id": "quantum-adder",
+  "name": "Quantum Half-Adder",
+  "category": "arithmetic",
+  "description": "Reversible quantum half-adder: computes sum = a XOR b and carry = a AND b for 1-bit inputs.",
+  "long_description": "A quantum half-adder computes the sum and carry of two 1-bit numbers reversibly. The carry is computed using a Toffoli (CCX) gate (AND), and the sum using a CNOT (XOR). Because quantum gates are reversible, the input is not destroyed. This is a primitive building block of quantum arithmetic used in Shor's algorithm and quantum simulation. This circuit adds a=1, b=1 \u2192 sum=0, carry=1.",
+  "difficulty": "beginner",
+  "qubit_count": 3,
+  "clbit_count": 2,
+  "gate_count": 5,
+  "depth": 4,
+  "tags": [
+    "arithmetic",
+    "adder",
+    "reversible",
+    "toffoli"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "c[0]=0 (sum=0), c[1]=1 (carry=1) \u2014 correct for 1+1=10",
+  "references": [
+    {
+      "title": "Vedral, Barenco, Ekert (1996). Quantum Networks for Elementary Arithmetic Operations. PRA 54(1)",
+      "url": "https://doi.org/10.1103/PhysRevA.54.147"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
