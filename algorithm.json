@@ -1,0 +1,29 @@
+{
+  "slug": "quantum-adder",
+  "name": "Quantum Half-Adder",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Reversible quantum half-adder: computes sum and carry for 1-bit inputs using Toffoli gates.",
+  "industries": [
+    "education"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "beginner",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 4,
+  "tags": [
+    "adder",
+    "arithmetic",
+    "toffoli",
+    "reversible"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 1996
+  }
+}
